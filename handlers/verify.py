@@ -402,7 +402,7 @@ class VerifyHandler:
             # Create participation message for channel
             participation_message = f"""**❖ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴅᴇᴛᴀɪʟs ❖**
 
-**▶ ᴜsᴇʀ:** °•🔱•(🌀)**{display_name}**🔱•°
+**▶ ᴜsᴇʀ:** **{display_name}**
 •••••• **{username_display}**
 
 **▶ ᴜsᴇʀ-ɪᴅ:** {user_data['user_id']}
