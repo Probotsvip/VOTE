@@ -35,7 +35,7 @@ class ForceSubscribeHandler:
                                 [
                                     [
                                         InlineKeyboardButton("• ᴊᴏɪɴ •", url=link),
-                                        InlineKeyboardButton("• ᴊᴏɪɴ •", url="https://t.me/BestFriendsChattingZone"),
+                                        InlineKeyboardButton("• ᴊᴏɪɴ •", url="https://t.me/Komal_Music_Support"),
                                     ]
                                 ]
                             )
