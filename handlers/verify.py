@@ -340,7 +340,7 @@ class VerifyHandler:
             
             subscription_status = await checker.check_all_subscriptions(
                 user_data["user_id"], 
-                [Config.SUPPORT_CHANNEL, Config.UPDATE_CHANNEL, channel_username]
+                [Config.UPDATE_CHANNEL, channel_username]
             )
             
             if not subscription_status["all_subscribed"]:
@@ -400,15 +400,14 @@ class VerifyHandler:
             username_display = f"@{user_data['username']}" if user_data.get("username") else "#INNOCENT_FUCKER"
             
             # Create participation message for channel
-            participation_message = f"""**❖ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴅᴇᴛᴀɪʟs ❖**
+            participation_message = f"""**❖ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴅᴇᴛᴀɪʟs**
 
-**▶ ᴜsᴇʀ:** °•🔱•(🌀)**{display_name}**🔱•°
-•••••• **{username_display}**
+**▶ ᴜsᴇʀ:** **{display_name}**
 
 **▶ ᴜsᴇʀ-ɪᴅ:** {user_data['user_id']}
 **▶ ᴜsᴇʀɴᴀᴍᴇ:** {username_display}
 
-**❖ ɴᴏᴛᴇ: ᴏɴʟʏ ᴄʜᴀɴɴᴇʟ sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴠᴏᴛᴇ ❖**
+**❖ ɴᴏᴛᴇ: ᴏɴʟʏ ᴄʜᴀɴɴᴇʟ sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴠᴏᴛᴇ**
 
 **×× ᴄʀᴇᴀᴛᴇᴅ ʙʏ - [ᴠᴏᴛᴇ ʙᴏᴛ](https://t.me/Komalmusicupdate)**"""
             
@@ -437,7 +436,7 @@ class VerifyHandler:
             print(f"DEBUG: Generated callback data: {callback_data}")
             
             vote_button = InlineKeyboardMarkup([
-                [InlineKeyboardButton(f"{emoji} Vote for this participant (0)", callback_data=callback_data)]
+                [InlineKeyboardButton(f"{emoji} ᴠᴏᴛᴇ (0)", callback_data=callback_data)]
             ])
             
             # Send message to channel with voting button and image
