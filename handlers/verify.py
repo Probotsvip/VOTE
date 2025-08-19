@@ -402,14 +402,14 @@ class VerifyHandler:
             # Create participation message for channel
             participation_message = f"""**❖ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴅᴇᴛᴀɪʟs**
 
-**▶ ᴜsᴇʀ:** **{display_name}**
+**✦ ᴜsᴇʀ:** **{display_name}**
 
-**▶ ᴜsᴇʀ-ɪᴅ:** {user_data['user_id']}
-**▶ ᴜsᴇʀɴᴀᴍᴇ:** {username_display}
+**✦ ᴜsᴇʀ-ɪᴅ:** {user_data['user_id']}
+**✦ ᴜsᴇʀɴᴀᴍᴇ:** {username_display}
 
 **❖ ɴᴏᴛᴇ: ᴏɴʟʏ ᴄʜᴀɴɴᴇʟ sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴠᴏᴛᴇ**
 
-**×× ᴄʀᴇᴀᴛᴇᴅ ʙʏ - [ᴠᴏᴛᴇ ʙᴏᴛ](https://t.me/Komalmusicupdate)**"""
+**×× ᴄʀᴇᴀᴛᴇᴅ ʙʏ - [ᴠᴏᴛᴇ ʙᴏᴛ](https://t.me/My_Vote_Robot)**"""
             
             # Post to channel using channel username
             channel_username = vote_data.get("channel_username", "")
