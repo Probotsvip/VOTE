@@ -115,7 +115,7 @@ class VerifyHandler:
                 
                 # Verify subscription to all required channels
                 subscription_status = await self.checker.check_all_subscriptions(
-                    voter_id, [Config.SUPPORT_CHANNEL, Config.UPDATE_CHANNEL, channel_username]
+                    voter_id, [Config.UPDATE_CHANNEL, channel_username]
                 )
                 
                 if subscription_status["all_subscribed"]:
